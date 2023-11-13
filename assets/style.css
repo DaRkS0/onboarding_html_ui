@@ -93,13 +93,16 @@ body {
 }
 
 .qs_app_step {
-    position: absolute;
+    
     top: 0;
     left: 0;
     right: 0;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     visibility: hidden;
+}
+.qs_app_step:not(.active){
+    display: none;
 }
 
 .qs_app_step.active {
@@ -172,6 +175,7 @@ body {
 
     .qs_app_modal_content {
         border: 0;
+        gap: 2rem;
         width: 100%; /* Adjust width for mobile */
         margin-top: 5%; /* Adjust top margin for vertical centering */
         /* Other adjustments for the modal content */
